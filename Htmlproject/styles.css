@@ -1,0 +1,442 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    background-image: url("stefan-grage-Y4MKctPwIrw-unsplash.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden
+}
+
+#slider {
+    overflow: hidden;
+    max-width: 40%;
+    width: 100%;
+    border: 7px ridge lightskyblue;
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+    right: 6%;
+}
+
+#img-slider {
+    position: relative;
+    width: 500%;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#img-slider img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+#img-slider:hover {
+    animation-play-state: paused;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.navbar-cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.navbar-cover > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.navbar-link-cover {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navbar-link-cover a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navbar-link-cover:hover {
+    border-bottom: 1px solid black;
+}
+
+.navbar-link-cover  :hover {
+    color: black;
+}
+
+.textArea {
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 3%;
+    max-width: 45%;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.header {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+.adhamsBild {
+    display: block;
+    margin-right: 12%;
+    margin-top: -8%;
+    margin-left: 65%;
+    width: 30%;
+    position: absolute;
+}
+
+.ahmadsBild {
+    display: block;
+    margin-right: 12%;
+    margin-top: -8%;
+    margin-left: 65%;
+    width: 30%;
+    position: absolute;
+}
+
+.gullettsBild {
+    display: block;
+    margin-right: 12%;
+    margin-top: -8%;
+    margin-left: 65%;
+    width: 30%;
+    position: absolute;
+}
+
+.hanisBild {
+    display: block;
+    margin-right: 12%;
+    margin-top: -8%;
+    margin-left: 65%;
+    width: 30%;
+    position: absolute;
+}
+
+.halilsBild {
+    display: block;
+    margin-right: 12%;
+    margin-top: -8%;
+    margin-left: 65%;
+    width: 30%;
+    position: absolute;
+}
+
+.textField {
+    text-align: left;
+    margin-left: 3%;
+    margin-right: 0%;
+    max-width: 50%;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+
+#haniTitel {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+#halilTitel {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+#adhamTitel {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+#ahmadTitel {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+#goledTitel {
+    text-align: center;
+    color: #8a8a8a;
+}
+
+
+
+.contact {
+    text-align: center;
+}
+
+.contact-title {
+    margin-top: 2%;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-title h1 {
+    font-size: 3vw;
+    line-height: 120%;
+}
+
+.contact-title h2 {
+    font-size: 1vw;
+}
+
+form {
+    margin-top: 2%;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 40%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #8a8a8a;
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+}
+
+input {
+    height: 10%;
+}
+
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    color: white;
+    font-size:  1.8vw;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    height: 4vw;
+    margin-top: 1%;
+}
+
+form .submit:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.contentGroup {
+    margin-left: 3% ;
+    margin-right: 55%;
+    width: 100%;
+    position: relative;
+}
+
+
+.omTeamet{
+    color: #8a8a8a;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 0%;
+}
+
+.motTeamet {
+    color :#8a8a8a;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40%;
+    margin-right: 0%;
+}
+
+.beskrivTeamet {
+    width: 40%;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.teametsErbjudan {
+    width: 40%;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.erbjuderTeamet {
+    color:#8a8a8a;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40%;
+    margin-right: 0%;
+}
+
+.teammedlemmar {
+    color: #8a8a8a;;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 40%;
+}
+
+.presentationMedlemmar {
+    width: 40%;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.presentationMedlemmar {
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.presentationMedlemmar .link-medlemmar a:link {
+    color: black;
+    font-size: calc(0.55em + 0.55vw);
+}
+
+.presentationMedlemmar .link-medlemmar a:visited {
+    color: black;
+}
+
+.presentationMedlemmar .link-medlemmar a:hover {
+    color: blue;
+}
+
+.portfolio-container {
+    width: 100%;
+    height: 100%;
+    font-size: calc(0.5em + 0.5vw);
+}
+
+.enskild-portfolio1 {
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.enskild-portfolio1 .portfolio-bild1 {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+    padding: 10% 10%;
+}
+
+
+.enskild-portfolio1 .portfolio-text1 {
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 0%;
+    width: 30%;
+    padding: 10%;
+    padding-left: 15%;
+}
+
+.enskild-portfolio2 {
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.enskild-portfolio2 .portfolio-bild2 {
+    width: 48%;
+    margin-right: 5%;
+    float: right;
+    padding: 5% 0%;
+}
+
+
+.enskild-portfolio2 .portfolio-text2 {
+    margin-top: 1%;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 30%;
+    padding: 10% 7%;
+}
+
+.enskild-portfolio3 {
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.enskild-portfolio3 .portfolio-bild3 {
+    width: 40%;
+    float: left;
+    padding: 10% 8%;
+}
+
+.enskild-portfolio3 .portfolio-text3 {
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 0%;
+    width: 40%;
+    padding: 10%;
+    padding-left: 15%;
+}
+
+.animering-box {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 10%;
+}
+
+.animering-before {
+    font-size: calc(0.8em + 0.8vw);
+    font-family: arial;
+    text-align: center;
+}
+
+.animering-after {
+    display: none;
+    font-size: calc(0.5em + 0.5vw);
+    font-family: Arial;
+    text-align: left;
+    opacity: 0;
+    height: 100%;
+    width: 90%;
+}
+
+.gruppBild {
+    max-width: 40%;
+    width: 100%;
+    float: right;
+    margin-right: 10%;
+}
+

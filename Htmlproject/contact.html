@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Kontakta Oss</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-cover">
+            <div class="left-side">
+                <div class="navbar-link-cover">
+                    <a href="index.html">Hem</a>
+                </div>
+                <div class="navbar-link-cover">
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+                <div class="navbar-link-cover">
+                    <a href="group-page.html">Vårt Team</a>
+                </div>
+                <div class="navbar-link-cover">
+                    <a href="contact.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div>Grupp 21</div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-title">
+            <h1>Kontakta oss</h1>
+            <h2>Har du någon fråga eller fundering? Fyll i nedanstående formulär för att kontakta oss</h2>
+        </div>
+        <div class="contact-form">
+            <form id="contact-form" method="POST" action="contact">
+                <input name="name" type="text" minlength="3" class="form-control" placeholder="Namn" required><br>
+                <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+                <input name="tel" type="tel" pattern="\d*" class="form-control" placeholder="Telefonnummer"
+                    required><br>
+                <textarea name="message" minlength="1" class="form-control" placeholder="Meddelande" rows="4"
+                    required></textarea><br>
+                <input type="Submit" class="form-control submit" value="Skicka">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
